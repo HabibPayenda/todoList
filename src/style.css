@@ -27,6 +27,19 @@ body {
   align-items: center;
 }
 
+.message {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: green;
+  width: 100%;
+}
+
+.messageText {
+  color: var(--color--white);
+}
+
 .list {
   display: flex;
   flex-direction: column;

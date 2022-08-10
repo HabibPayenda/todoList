@@ -11,14 +11,17 @@
 </head>
 <body>
     <div class="mainContainer">
+        <div id="message" class="message">
+            <div id="messageText" class="messageText"></div>
+        </div>
         <div class="listHeader">
             <div class="listHeaderTop">
                 <p class="listHeaderText">Today's ToDo</p>
-                <i class="fas fa-sync"></i>
+                <i id="refresh" class="fas fa-sync"></i>
             </div>
             <div class="listHeaderBottom">
                 <input id="text" type="text" class="text" placeholder="Add to your list...">
-                <i class="fas fa-plus"></i>
+                <i id="addIcon" class="fas fa-plus"></i>
             </div>
         </div>
         <ul class="list" id="list">
