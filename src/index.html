@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/105bcdf182.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>ToDo List</title>
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <div class="mainContainer">
+        <div class="listHeader">
+            <div class="listHeaderTop">
+                <p class="listHeaderText">Today's ToDo</p>
+                <i class="fas fa-sync"></i>
+            </div>
+            <div class="listHeaderBottom">
+                <input id="text" type="text" class="text" placeholder="Add to your list...">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+        <ul class="list" id="list">
+           
+        </ul>
+        <div class="listFooter">
+            <p class="clear">
+                Clear All Completed!
+            </p>
+        </div>
+    </div>
 </body>
 </html>
