@@ -53,7 +53,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Original design idea by <a href='https://www.behance.net/adagio07'> Cindy Shin <a> in Behance.
 - Inspiration
 - etc
 
