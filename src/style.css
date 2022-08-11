@@ -74,6 +74,10 @@ body {
   border-bottom: solid 1px var(--color--gray);
 }
 
+.addIcon:hover {
+  cursor: pointer;
+}
+
 .listHeaderBottom {
   display: flex;
   justify-content: space-between;
@@ -116,6 +120,10 @@ body {
 
 .listItemIcon {
   flex: 1;
+}
+
+.listItemIcon:hover {
+  cursor: pointer;
 }
 
 .menu {
@@ -166,6 +174,12 @@ body {
 
 .clear {
   color: var(--color--gray);
+  transition: all 0.3s;
+}
+
+.clear:hover {
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .editInput {
@@ -184,4 +198,8 @@ body {
 .menuOk {
   margin-left: 10px;
   flex: 1;
+}
+
+.menuOk:hover {
+  cursor: pointer;
 }
