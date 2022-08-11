@@ -25,29 +25,6 @@ addIcon.addEventListener('click', () => {
   messageText.innerText = 'Task added, Please refresh!';
 });
 
-// const tasks = [
-//   {
-//     desc: 'First Task',
-//     completed: false,
-//     index: 0,
-//   },
-//   {
-//     desc: 'Seconde Task',
-//     completed: false,
-//     index: 1,
-//   },
-//   {
-//     desc: 'Third Task',
-//     completed: false,
-//     index: 2,
-//   },
-//   {
-//     desc: 'Fourth Task',
-//     completed: false,
-//     index: 3,
-//   },
-// ];
-
 tasks.forEach((task) => {
   const listItem = document.createElement('li');
   listItem.classList.add('listItem');
