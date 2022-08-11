@@ -25,6 +25,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 500px;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.message {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: green;
+  width: 100%;
+}
+
+.messageText {
+  color: var(--color--white);
 }
 
 .list {
@@ -33,7 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color--light);
-  width: 300px;
+  width: 100%;
 }
 
 .listHeader {
@@ -77,6 +93,7 @@ body {
 }
 
 .listItem {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -101,6 +118,43 @@ body {
   flex: 1;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100px;
+  flex: 3;
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.menuClose {
+  font-size: 18px;
+  color: limegreen;
+  position: absolute;
+  top: -19px;
+  right: -18px;
+}
+
+.menuItem {
+  color: var(--color--white);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.deleteItem {
+  background-color: crimson;
+}
+
+.editItem {
+  background-color: green;
+}
+
 .listFooter {
   display: flex;
   align-items: center;
@@ -112,4 +166,22 @@ body {
 
 .clear {
   color: var(--color--gray);
+}
+
+.editInput {
+  height: 100%;
+  width: 100%;
+  padding: 5px 20px;
+  border: none;
+  background-color: var(--color--light);
+  flex: 7;
+}
+
+.editInput:focus {
+  outline: none;
+}
+
+.menuOk {
+  margin-left: 10px;
+  flex: 1;
 }

@@ -1,33 +1,28 @@
 import './style.css';
+import {
+  tasks,
+  addTask,
+  editTask,
+} from './task.js';
 
 const list = document.getElementById('list');
+const refresh = document.getElementById('refresh');
+const addIcon = document.getElementById('addIcon');
+const text = document.getElementById('text');
 
-const tasks = [
-  {
-    desc: 'First Task',
-    completed: false,
-    index: 0,
-  },
-  {
-    desc: 'Seconde Task',
-    completed: false,
-    index: 1,
-  },
-  {
-    desc: 'Third Task',
-    completed: false,
-    index: 2,
-  },
-  {
-    desc: 'Fourth Task',
-    completed: false,
-    index: 3,
-  },
-];
+refresh.addEventListener('click', () => {
+  document.location.reload();
+});
+
+addIcon.addEventListener('click', () => {
+  const desc = text.value;
+  addTask(desc);
+});
 
 tasks.forEach((task) => {
   const listItem = document.createElement('li');
   listItem.classList.add('listItem');
+  listItem.setAttribute('id', task.index);
 
   const check = document.createElement('input');
   check.setAttribute('type', 'checkbox');
@@ -41,6 +36,9 @@ tasks.forEach((task) => {
   listItemIcon.classList.add('listItemIcon');
   listItemIcon.classList.add('fas');
   listItemIcon.classList.add('fa-ellipsis-v');
+  listItemIcon.addEventListener('click', () => {
+    editTask(task.index);
+  });
 
   listItem.append(check, todo, listItemIcon);
   list.append(listItem);
