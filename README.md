@@ -25,13 +25,27 @@ If you want to use this project locally on your device you will need the followi
     3: Git
 
 ### Setup
-To setup this project on your local device clone it using git and then install all of it's dependencies using npm.
+- Clone the repository ` git clone https://github.com/HabibPayenda/todoList.git`
 
+### Install
+- `npm install`
+- `npm run build`
+- `npm start`
+
+### Test
+- `npm test`
 
 
 
 
 ## Authors
+
+
+👤 **Syed Shuja Hussain (He/Him)**
+
+- GitHub: [@shuja-shah](https://github.com/shuja-shah)
+- Twitter : [@SyedShujaHussa3](https://twitter.com/SyedShujaHussa3)
+- LinkedIn :[@syedshujahussa](https://www.linkedin.com/in/syedshujahussa/)
 
 👤 **Habib Payenda**
 
