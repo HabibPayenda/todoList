@@ -1,13 +1,6 @@
+import Task from './TaskClass.js';
+
 export const tasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
-
-export default class Task {
-  constructor(desc, index) {
-    this.desc = desc;
-    this.completed = false;
-    this.index = index;
-  }
-}
-
 export const addTask = (desc) => {
   const task = new Task(desc, tasks.length + 1);
   const newTasks = [...tasks, task];
