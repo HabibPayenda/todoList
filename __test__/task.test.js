@@ -22,3 +22,13 @@ describe('Adding a task to the list', () => {
     expect(tasks.length).toBeGreaterThan(value);
   });
 });
+
+describe('', () => {
+  it('should remove an Item from the task', () => {
+    const index = 1;
+    const tasks = Localstorage.getAllTasks().filter((task) => task.index !== index);
+
+    const deletedTask = tasks.filter((task) => task.index === index);
+    expect(deletedTask[0]).toBeUndefined();
+  });
+});
