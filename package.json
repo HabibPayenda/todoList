@@ -37,8 +37,5 @@
   "dependencies": {
     "@types/jest": "^28.1.7",
     "lodash": "^4.17.21"
-  },
-  "jest": {
-    "coverageDirectory": "<rootDir>/__test__"
- }
+  }
 }
