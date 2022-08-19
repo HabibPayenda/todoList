@@ -45,10 +45,8 @@ export const setCompleted = (index) => {
 
 export const editTask = (index, editInput) => {
   const newTasks = localStorage.list.filter((item) => item.index !== index);
-  console.log(editInput.value);
   const newTask = new Task(editInput.value, index);
   newTasks.splice(index - 1, 0, { ...newTask });
 
   localStorage.setItem('tasks', newTasks);
-  console.log(localStorage.getAllItems());
 };
