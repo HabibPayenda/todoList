@@ -4,7 +4,6 @@ describe('Adding a task to the list', () => {
   it('should add a task to the list', () => {
     const desc = 'hello';
     addTask(desc);
-    console.log(localStorage.list);
     expect(localStorage.list.length).toBe(1);
   });
 
