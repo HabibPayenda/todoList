@@ -5,6 +5,7 @@
 import {
   addTask,
   removeTask,
+  editTask,
   localStorage,
   setCompleted,
   removeAllCompleted,
@@ -50,4 +51,17 @@ describe('Completed task functions', () => {
 
     expect(check.length).toBe(0);
   });
+  it('should edit one specific task', () => {
+    const desc = 'Old';
+    addTask(desc);
+    const inputValue = 'New';
+    const index = 1;
+    const taskInput = document.createElement('input');
+    taskInput.setAttribute('type', 'text');
+    taskInput.value = inputValue;
+    editTask(index, taskInput);
+    expect(localStorage.getAllItems().tasks[0].desc).toBe(inputValue);
+  });
+
 });
+
