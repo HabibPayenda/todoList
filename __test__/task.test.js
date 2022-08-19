@@ -62,6 +62,4 @@ describe('Completed task functions', () => {
     editTask(index, taskInput);
     expect(localStorage.getAllItems().tasks[0].desc).toBe(inputValue);
   });
-
 });
-
