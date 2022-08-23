@@ -2,12 +2,12 @@
 
 # ToDo List
 
-> ToDo List Project
+> This is a todo app where the user can add his/her daily todos, some the functionalities it provides are adding a new todo editing a todo deleteing a todo marking a todo as completed and removing all the completed todos, it also keep track of the todos in localstorage.
 
 
 ## Built With
 
-- HTML, CSS, Javascript
+- HTML, CSS, Javascript, Local Storage
 
 ## Live Demo ()
 
